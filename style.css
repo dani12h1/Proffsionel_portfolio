@@ -42,7 +42,7 @@ header img {
 }
 
 .header_text p {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   line-height: 1.1rem;
 }
 
@@ -94,6 +94,11 @@ header {
 .about_text {
   width: 50vw;
   min-width: 300px;
+  line-height: 1.1rem;
+}
+
+.about_text h2 {
+  padding-bottom: 1rem;
 }
 
 #about img {
@@ -125,10 +130,10 @@ header {
   margin: 20px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  /* max-width: 650px; */
+  max-width: 1000px;
   cursor: pointer;
   border-radius: 5px;
-  max-height: 350px;
+  max-height: 600px;
 }
 
 .card-container a {
@@ -212,6 +217,10 @@ footer section div {
   margin-top: 10rem;
 }
 
+.intro img {
+  object-fit: cover;
+}
+
 .text_docu {
   margin-inline: 20%;
   place-content: center;
@@ -220,7 +229,7 @@ footer section div {
 
 .button_fonts {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-bottom: 5rem;
   gap: 1rem;
   margin-inline: 20%;
@@ -238,26 +247,39 @@ footer section div {
   margin-bottom: 4rem;
 }
 
-@media (max-width: 900px) {
+.pic_color {
+  display: flex;
+  object-fit: cover;
+  gap: 1rem;
+  margin-inline: 20%;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 800px) {
   .logo img {
     padding: 1rem;
   }
-}
 
-.button_fonts {
-  display: flex;
-  flex-wrap: wrap;
-}
+  .button_fonts,
+  .pic_color {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.pic_fonts,
-.button_fonts,
-.text_docu,
-.intro {
-  margin-inline: 8%;
+  .pic_fonts,
+  .button_fonts,
+  .text_docu,
+  .intro {
+    margin-inline: 8%;
+  }
 }
 
 @media (max-width: 670px) {
   .img_mig {
     order: -1;
+  }
+
+  .card_content {
+    min-height: 500px;
   }
 }

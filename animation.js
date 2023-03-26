@@ -16,7 +16,7 @@ function stopLoad() {
 
 document.addEventListener("DOMContentLoaded", function () {
   let scrollKnapProjects = document.querySelector("li:nth-of-type(1)");
-  let projects = document.querySelector(".card:nth-of-type(2)");
+  let projects = document.querySelector("#projects");
 
   scrollKnapProjects.addEventListener("click", scrollFunction);
 
@@ -28,26 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-/* About scroll */
-
-document.addEventListener("DOMContentLoaded", function () {
-  let scrollKnapAbout = document.querySelector("li:nth-of-type(2)");
-  let about = document.querySelector("#about");
-
-  scrollKnapAbout.addEventListener("click", scrollFunction);
-
-  function scrollFunction() {
-    about.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-    });
-  }
-});
-
 /* Contact scroll */
 
 document.addEventListener("DOMContentLoaded", function () {
-  let scrollKnapContact = document.querySelector("li:nth-of-type(3)");
+  let scrollKnapContact = document.querySelector("li:nth-of-type(2)");
   let contact = document.querySelector("footer");
 
   scrollKnapContact.addEventListener("click", scrollFunction);
