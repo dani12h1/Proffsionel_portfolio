@@ -128,6 +128,7 @@ header {
   /* max-width: 650px; */
   cursor: pointer;
   border-radius: 5px;
+  max-height: 350px;
 }
 
 .card-container a {
@@ -135,7 +136,8 @@ header {
 }
 
 .card img {
-  max-width: 88%;
+  max-width: 90%;
+  max-height: 200px;
   height: auto;
   width: 400px;
   object-fit: cover;
@@ -197,6 +199,7 @@ footer section div {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--color-grey);
+  place-content: center;
 }
 
 #docu img {
@@ -212,6 +215,8 @@ footer section div {
 
 .text_docu {
   margin-inline: 20%;
+  place-content: center;
+  padding-top: 3rem;
 }
 
 .button_fonts {
@@ -226,6 +231,7 @@ footer section div {
 .button_fonts button {
   max-width: 200px;
   min-width: 200px;
+  width: clamp(150px 5vw 200px);
 }
 
 .pic_fonts {
@@ -233,10 +239,19 @@ footer section div {
   margin-bottom: 4rem;
 }
 
+.intro img {
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   img {
     padding: 1rem;
   }
+}
+
+.button_fonts {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 670px) {
