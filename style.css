@@ -199,7 +199,6 @@ footer section div {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--color-grey);
-  place-content: center;
 }
 
 #docu img {
@@ -208,7 +207,7 @@ footer section div {
 }
 
 .intro {
-  text-align: center;
+  /* text-align: center; */
   margin-inline: 20%;
   margin-top: 10rem;
 }
@@ -239,12 +238,8 @@ footer section div {
   margin-bottom: 4rem;
 }
 
-.intro img {
-  text-align: center;
-}
-
 @media (max-width: 900px) {
-  img {
+  .logo img {
     padding: 1rem;
   }
 }
@@ -252,6 +247,13 @@ footer section div {
 .button_fonts {
   display: flex;
   flex-wrap: wrap;
+}
+
+.pic_fonts,
+.button_fonts,
+.text_docu,
+.intro {
+  margin-inline: 8%;
 }
 
 @media (max-width: 670px) {
